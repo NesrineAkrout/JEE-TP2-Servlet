@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+    <form method="POST" action="ServletRegistration">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+
+        <label for="familyName">Family Name:</label>
+        <input type="text" id="familyName" name="familyName" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <p>Topic of interest :</p>
+        <input type="checkbox" id="sujet1" name="Topic" value="Databases">
+        <label for="sujet1">Databases</label><br>
+        <input type="checkbox" id="sujet2" name="Topic" value="Object Oriented Programming">
+        <label for="sujet2">Object Oriented Programming</label><br>
+        <input type="checkbox" id="sujet3" name="Topic" value="Web application developement">
+        <label for="sujet3">Web application developement</label><br>
+        <input type="checkbox" id="sujet4" name="Topic" value="Software developement">
+        <label for="sujet4">Software developement</label><br>
+        <input type="checkbox" id="sujet5" name="Topic" value="Artificial Intelligence">
+        <label for="sujet5">Artificial Intelligence</label><br>
+        <input type="checkbox" id="sujet6" name="Topic" value="Information Retrieval">
+        <label for="sujet6">Information Retrieval</label><br>
+        <br>
+        
+        <input type="submit" value="Register">
+    </form>
+     
+    <a href="ServletRegistration">Lien vers la servlet ServletRegistration avec la méthode GET</a>
+</body>
+</html>

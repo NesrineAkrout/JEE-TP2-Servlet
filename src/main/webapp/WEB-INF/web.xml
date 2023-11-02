@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>GestionClient</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>admin_name</param-name>
+    <param-value>nesrine</param-value>
+  </context-param>
+  <context-param>
+    <param-name>admin_email</param-name>
+    <param-value>aknesrine@gmail.com</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>Servlet1</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>servlets.Servlet1</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>course</param-name>
+      <param-value>Jakarta EE</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>author</param-name>
+      <param-value>Nesrine Akrout</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletRegistration</display-name>
+    <servlet-name>ServletRegistration</servlet-name>
+    <servlet-class>servlets.ServletRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletRegistration</servlet-name>
+    <url-pattern>/ServletRegistration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletErreur</display-name>
+    <servlet-name>ServletErreur</servlet-name>
+    <servlet-class>servlets.ServletErreur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletErreur</servlet-name>
+    <url-pattern>/ServletErreur</url-pattern>
+  </servlet-mapping>
+  <error-page>
+        <error-code>404</error-code>
+        <location>/ServletErreur</location>
+    </error-page>
+</web-app>
