@@ -50,7 +50,7 @@ public class Servlet1 extends HttpServlet {
         String ipAddress = request.getRemoteAddr();
         out.println("<p>Adresse IP du client: " + ipAddress + "</p>");
         
-     // e. Langues que le client est capable de comprendre
+     // Langues que le client est capable de comprendre
         Enumeration<Locale> locales = request.getLocales();
         out.println("<p>Langues que le client est capable de comprendre :</p>");
         out.println("<ul>");
@@ -60,7 +60,7 @@ public class Servlet1 extends HttpServlet {
         }
         out.println("</ul>");
 
-        // f. Toutes les entêtes de la requête HTTP
+        // Toutes les entêtes de la requête HTTP
         out.println("<p>Entêtes de la requête HTTP :</p>");
         out.println("<ul>");
         Enumeration<String> headerNames = request.getHeaderNames();
